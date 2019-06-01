@@ -1,0 +1,9 @@
+[package]
+name = "bandwidth_monitor"
+version = "0.1.0"
+authors = ["Natnael Getahun <connect@ngetahun.me>"]
+edition = "2018"
+
+[dependencies]
+pcap = { version = "0.7", features = ["tokio"] }
+clap = { features = ["yaml"] }

@@ -1,0 +1,25 @@
+name: bandwidth_monitor
+version: "1.0"
+about: an example using a .yml file to build a CLI
+author: Natnael Getahun <connect@ngetahun.me>
+
+# AppSettings can be defined as a list and are **not** ascii case sensitive
+settings:
+    - ArgRequiredElseHelp
+
+# All Args must be defined in the 'args:' list where the name of the arg, is the
+# key to a Hash object
+args:
+    # The name of this argument, is 'opt' which will be used to access the value
+    # later in your Rust code
+    # - opt:
+    #     help: example option argument from yaml
+    #     short: o
+    #     long: option
+    #     multiple: true
+    #     takes_value: true
+    - list:
+        help: List all available devices
+        short: l
+        multiple: false
+        global: true
