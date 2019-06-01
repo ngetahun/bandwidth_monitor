@@ -23,3 +23,13 @@ args:
         short: l
         multiple: false
         global: true
+    - default:
+        help: Print out the default device
+        short: d
+        multiple: false
+        global: true
+    - stat:
+        help: Print out the bandwidth usage
+        short: s
+        multiple: false
+        global: true
